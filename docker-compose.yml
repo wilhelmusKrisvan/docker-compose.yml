@@ -1,0 +1,8 @@
+version: '3'
+services:
+  kanboard:
+    image: kanboard/kanboard:latest
+    ports:
+      - "80:80"
+    environment:
+      DATABASE_URL: mysql://dbinstance:avenged7fold@instancedb.c5dwfvkkl6tn.us-east-1.rds.amazonaws.com/kanboard
